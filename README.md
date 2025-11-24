@@ -5,7 +5,7 @@
  - 課題の指示書に沿って再現し、一部デザインを調整しました。
 
 ## ③アプリのデプロイURL
-デプロイしている場合はURLを記入（任意）
+https://mitsuko117.github.io/kadai00_Cheese_Academy/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
  - なし
