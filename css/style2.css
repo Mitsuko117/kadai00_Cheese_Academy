@@ -1,0 +1,139 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto; /* ホームページ全体を中央に表示する */
+    color: #222;
+    
+}
+
+/* リンクを横並び */ /* リンクの下線日をなくす */
+/* https://webdesign-pg.com/gnav01-leftlogo-rightmenu */
+/* https://mckee-pro.com/css%E3%81%A7%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%88%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%89%E3%82%92%E4%B8%8A%E9%83%A8%E3%81%AB%E5%9B%BA%E5%AE%9A%E3%81%95 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    font-size: 21px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li{
+    width: 120px;
+    text-align: center;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+/* デフォルトのh1に適応されるスタイル */
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+} 
+
+/* 英語コンテキスト内のh1に適用されるスタイル */
+:lang(en) h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+p {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+/* Contact送信後の画面 */
+.contact-a {
+    background-color: #f0efe7;
+}
+
+.thanks-message{
+    position: relative;
+    margin: 0 auto;
+}
+
+.thanks-message{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    opacity: .8;
+}
+
+.thanks-message-2{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;  /* 2つのテキスト間の余白 */
+}
+
+.mthanks-message p{
+    color: #fff;
+    white-space: nowrap;  /* 改行を防ぐ */
+    margin: 0;  /* デフォルトのmarginを削除 */
+}
+
+
+    /* 見出し、中見出しのスタイル */
+h1{
+    font-size: 32px;
+    padding: 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.btn-contact {
+    font-size: 25px;
+    padding-top: 60px;
+}
+
+
+/* footer 2*/
+.footer-2{
+    display: flex;
+    align-items: center; 
+    height: auto;
+    justify-content: center; 
+    color: #707070;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

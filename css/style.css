@@ -1,0 +1,492 @@
+/* ここから下に記載していく */
+body{
+    max-width: 1200px;
+    margin: 0 auto; /* ホームページ全体を中央に表示する */
+    color: #222;
+    
+}
+
+/* リンクを横並び */ /* リンクの下線日をなくす */
+/* https://webdesign-pg.com/gnav01-leftlogo-rightmenu */
+/* https://mckee-pro.com/css%E3%81%A7%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%EF%BC%88%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%89%E3%82%92%E4%B8%8A%E9%83%A8%E3%81%AB%E5%9B%BA%E5%AE%9A%E3%81%95 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    font-size: 21px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li{
+    width: 120px;
+    text-align: center;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+/* デフォルトのh1に適応されるスタイル */
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+} 
+
+/* 英語コンテキスト内のh1に適用されるスタイル */
+:lang(en) h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+h1, h2 {
+    line-height: 1.2;
+}
+
+p {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.yellow{
+    color: #ffd61a;
+}
+
+
+/* 一番上の写真＋文字のCSS */
+.mainbg{
+    position: relative;
+    margin: 0 auto;
+}
+
+.mainbg img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    opacity: .8;
+}
+
+.text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;  /* 2つのテキスト間の余白 */
+    text-shadow: 0 0 5px #838383;
+}
+
+.mainbg p{
+    color: #fff;
+    white-space: nowrap;  /* 改行を防ぐ */
+    margin: 0;  /* デフォルトのmarginを削除 */
+}
+
+
+    /* 見出し、中見出しのスタイル */
+.headline{
+    font-size: 48px;
+}
+
+.subheading{
+    font-size: 32px;
+}
+
+
+/* チーズアカデミーについて */
+.ABOUT{
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.ABOUT h1 {
+    padding-bottom: 30px;
+}
+
+.ABOUT h2 {
+    padding-bottom: 60px;
+}
+
+.ABOUT p {
+    padding-bottom: 40px;
+}
+
+/* スライドショー */
+.about_images{
+    margin: 0 auto;
+    
+}
+
+
+
+/* コースについて */
+.COURSE{
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.COURSE h1 {
+    padding-bottom: 30px;
+}
+
+.COURSE h2 {
+    padding-bottom: 60px;
+    line-height: 1.5;/*行間設定*/
+}
+
+
+/* コースのレイアウト*/
+.course_box {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;  /* 中央揃え */
+    display: flex;
+    align-items: center;  /* 縦方向の中央揃え */
+    background-color: #fafafa;
+}
+
+.course_box:nth-child(even) {
+    flex-direction: row-reverse;　/*写真と文字を逆にする*/
+}
+
+.course_box h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.course_text {
+    text-align: left;
+    width: 485px;
+    margin-right: 115px;
+    line-height: 1.5;
+}
+
+.course_text p {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.course_text-2 {
+    width: 480px;
+    margin-left: 120px;
+    line-height: 1.5;
+}
+
+.course_text-2 h2 {
+    text-align: left;
+}
+
+.course_text-2 p {
+    text-align: left;
+    padding-right: 50px;
+}
+
+.course_img {
+    width: 50%; 
+    padding: 0;
+}
+
+.course_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+}
+
+
+/* ニュース */
+.NEWS {
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;  /* 縦方向の中央揃え */
+    padding-top: 60px;
+}
+
+.NEWS h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.NEWS h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+
+.news{
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.news-card {
+    width: 340px;
+    height: auto;
+    line-height: 1.5;
+}
+
+.news-card:hover{
+    transform: scale(1.05); 
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    display: block;
+    cursor: pointer; /* ホバー時に指マークのカーソルを表示 https://job-info.hateblo.jp/entry/2024/08/21/001330*/
+}
+
+.news-card p {
+    font-size: 16px;
+    padding-top: 24px;
+    text-align: left;  /* 左揃えに変更 */
+    cursor: pointer; /* ホバー時に指マークのカーソルを表示 */
+}
+
+
+/* ボタンのホバーアクション */
+.btn {
+    display: block;
+    font-size: 18px;
+    width: 300px;
+    margin: 0 auto;  /* 左右のマージンを自動調整 */
+    margin-bottom: 60px;
+    text-align: center;
+    text-decoration: none; /*中のテキストの下線部なくす*/
+    line-height: 60px;
+    outline: none;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #ffd61a;
+    -webkit-transition: all .5s; /* 古いバージョンのSafariやChrome向けのベンダープレフィックス */
+    transition: all .5s; 
+     /* all: すべてのプロパティ（色、背景色、幅など）に適用 /0.5秒かけて変化（変化の速度）*/
+}
+
+.btn:hover { /* .btn:hoverの「:」の前後にはスペースを入れない！*/
+    color: #ffd61a;
+    border:2px solid #ffd61a;
+    background-color: #fff;
+}
+
+
+
+/* 地図 */
+.location-map{
+    width: 1200px;
+    height: auto;
+}
+
+
+/* 会社情報 */
+.access{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.access h1{
+    font-size: 24px;
+    color: #222;
+    padding-bottom: 30px;
+}
+
+.access h2 {
+    padding-bottom: 60px;
+}
+
+
+.info {
+    font-size: 16px;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.info th {
+    text-align: left;
+    font-weight: normal;
+}
+
+.info td {
+    padding-left: 60px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+
+
+/* 問い合わせフォーム */
+.contact-h {
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.contact-h h1 {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-h h2 {
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+.contact-h p {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.contact {
+    margin: 0 auto;
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-table {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: flex;
+    border-collapse: collapse;
+}
+
+.contact-table th,
+.contact-table td {
+    border-top: 1px solid #bfbfbf;     /* 上の横線 */
+    border-bottom: 1px solid #bfbfbf;  /* 下の横線 */
+    border-left: none;
+    border-right: none;
+    vertical-align: top; /* 上ぞろえ*/
+}
+
+.contact-table th {
+    width: 240px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 64px;
+    text-align: left;
+}
+
+.contact-table td {
+    padding: 8px;
+    width: 420px;
+    border-left: 1.5px solid #bfbfbf;   /* 真ん中縦線 */
+}
+
+.contact-body p{
+    text-align: left;
+    margin: 24px 5px;
+    margin-top: 8px;
+}
+
+.contact-body input{
+    margin-right: 10px;
+}
+
+.contact-body input[type="text"] {
+    width: 80%;
+    height: 36px;
+    border: 1px solid #bfbfbf;
+}
+
+.contact-body select {
+    width: 80%;
+    height: 36px;
+    border: 1px solid #bfbfbf;
+}
+
+.contact-body textarea{
+    width: 85%;
+    height: 100px;
+    border: 1px solid #bfbfbf;
+}
+
+
+/* ボタンのホバーアクション */
+.btn-2 {
+    display: block;
+    font-size: 18px;
+    width: 300px;
+    margin: 0 auto;  /* 左右のマージンを自動調整 */
+    margin-top: 30px;
+    margin-bottom: 120px;
+    text-align: center;
+    text-decoration: none; /*中のテキストの下線部なくす*/
+    line-height: 60px;
+    outline: none;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #ffd61a;
+    -webkit-transition: all .5s; /* 古いバージョンのSafariやChrome向けのベンダープレフィックス */
+    transition: all .5s; 
+     /* all: すべてのプロパティ（色、背景色、幅など）に適用 /0.5秒かけて変化（変化の速度）*/
+}
+
+.btn-2:hover { /* .btn:hoverの「:」の前後にはスペースを入れない！*/
+    color: #ffd61a;
+    border:2px solid #ffd61a;
+    background-color: #fff;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    align-items: center; 
+    height: auto;
+    justify-content: center; 
+    color: #fff;
+    background-color: #707070;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
